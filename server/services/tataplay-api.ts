@@ -36,7 +36,7 @@ export class TataPlayAPI {
         method: 'POST',
         headers: {
           'accept': 'application/json, text/plain, */*',
-          'content-length': '0',
+          'content-type': 'application/json',
           'referer': 'https://www.tataplaybinge.com/',
           'deviceid': deviceId,
           'origin': 'https://www.tataplaybinge.com',
@@ -49,6 +49,7 @@ export class TataPlayAPI {
           'sec-fetch-site': 'cross-site',
           'x-requested-with': 'XMLHttpRequest'
         },
+        body: JSON.stringify({}),
       });
 
       if (!response.ok) {
