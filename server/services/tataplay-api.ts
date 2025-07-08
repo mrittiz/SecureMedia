@@ -36,6 +36,8 @@ export class TataPlayAPI {
         method: 'POST',
         headers: {
           'accept': 'application/json, text/plain, */*',
+          'accept-language': 'en-US,en;q=0.9',
+          'connection': 'keep-alive',
           'content-type': 'application/json',
           'referer': 'https://www.tataplaybinge.com/',
           'deviceid': deviceId,
